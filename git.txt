@@ -1,0 +1,19 @@
+How to use git and github
+
+git init
+
+git add
+git status
+
+git commit -m "your commit message"
+git log
+
+----push to remote repository-----
+
+git push <remote repo name> <branch name> / mainly origin, main respectively
+git remote -> <branch name>
+
+
+
+
+
