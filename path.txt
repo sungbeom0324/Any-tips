@@ -1,0 +1,16 @@
+-Temporarily adding PATH
+$ export PATH="$PATH:~/Downloads/flutter/bin"
+$PATH: 뒤에 원하는 경로를 넣으면 된다.
+
+-Permanently adding PATH
+똑같은데 echo $SHELL 로 확인 후 ~/.bash_profile , ~/.bashrc, ~/.zshrc 중 다음 삽입
+
+vi ~/.zshrc
+export PATH="$PATH:~/Downloads/flutter/bin"
+
+설정파일 새로고침
+source ~/.zshrc 
+
+잘 되었는지 확인
+echo $PATH  
+echo flutter
