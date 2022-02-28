@@ -1,0 +1,21 @@
+https://root-forum.cern.ch/t/problem-with-root-on-macos-error-module-darwin-uses-additional-module-map/48349
+
+<SITUATION>
+input_line_1:1:2: error: module 'Darwin' uses additional module map
+.
+.
+.
+fatal error: module file '/Applications/root_v6.24.06/lib/Darwin.pcm' is out of date and
+      needs to be rebuilt
+Failed to load module Darwin
+Failed to load module std
+Failed to load module _Builtin_intrinsics
+Failed to load module ROOT_Foundation_C
+Failed to load module ROOT_Config
+
+<SOLUTION>
+root 가 실행되지 않았는데, xcode 의 command line 이 업데이트 되며 루트와 호환 문제였다.
+설치된 CommandLineTools 를 삭제하고 예전 버전을 다운받는다.
+
+sudo rm -rf /Library/Developer/CommandLineTools
+xcode-select --install
